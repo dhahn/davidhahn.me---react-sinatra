@@ -1,0 +1,113 @@
+<html>
+	<title>Hello, I'm David.</title>
+	<link href="/stylesheets/styles.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,400,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script> 
+		window.config = window.config || {};
+		window.config.maker_words = '<%= %w( systems programs software websites things ).to_json %>';
+		window.config.tools_words = '<%= ["Ruby", "Ruby on Rails", "Sinatra", "RSpec", "HTML", "CSS", "SASS", "SCSS", "JavaScript", "AJAX", "jQuery", "JRuby", "CoffeScript", "Bootstrap", "C++", "Java", "Python", "Lua", "Bash", "Pygameo", "PHP", "JSON", "XML", "Redis", "PostgreSQL", "SQLite", "Vim", "Git", "Nginx", "LDAP", "TDD", "Laravel", "Wordpress"].to_json %> '
+	</script>
+	<script type="text/javascript" src="/scripts.js"></script>
+
+	<body>
+		<div id="splash-screen" class="section">
+			<div class="inner-section">
+				<span class="inner-text">
+					<span class="keyword">Hello</span>, I'm David.
+				</span>
+			</div>
+
+			<a href="#maker-of-things" class="next-section">
+				<span class="icon-arrow-down"></span>
+				<span>More</span>
+			</a>
+		</div>
+
+		<div id="maker-of-things" class="section">
+			<div class="inner-section">
+				<span class="inner-text"> I'm a maker of </span>
+				<span class="keyword"> things </span>
+			</div>
+
+			<a href="#make-things-with" class="next-section">
+				<span class="icon-arrow-down"></span>
+				<span>More</span>
+			</a>
+		</div>
+
+		<div id="make-things-with" class="section">
+			<div class="inner-section">
+				<span class="inner-text"> I make things with </span>
+				<span class="keyword"> Ruby on Rails </span>
+			</div>
+
+			<a href="#things-made" class="next-section">
+				<span class="icon-arrow-down"></span>
+				<span>More</span>
+			</a>
+		</div>
+
+		<div id="things-made" class="section">
+			<div class="inner-section">
+				<span class="inner-text"> Here are some things I've made.</span>
+
+				<div class="project-wrapper">
+					<a target="_blank" href="https://github.com/collettiquette/potato_ship">
+						<div id="potato-ship" class="projects"> 
+							<p> October 2014, Personal </p>
+							<h2> Potato Ship </h2>
+							<p class="tags"> Skills: Ruby on Rails, Javascript, Websockets </p>
+						</div>
+					</a>
+
+					<a target="_blank" href="http://www.howepic.net">
+						<div id="how-epic" class="projects"> 
+							<p> August 2014, Personal </p>
+							<h2> How Epic </h2>
+							<p class="tags"> Skills: Ruby on Rails, Javascript, API </p>
+						</div>
+					</a>
+
+					<a target="_blank" href="https://github.com/dhahn/Jurnl">
+						<div id="jurnl" class="projects"> 
+							<p> December 2013, Personal </p>
+							<h2> Jurnl </h2>
+							<p class="tags"> Skills: Ruby on Rails, Javascript, Postgres </p>
+						</div>
+					</a>
+
+					<a target="_blank" href="https://github.com/dhahn/r13-team-45">
+						<div id="fridge" class="projects"> 
+							<p> October 2013, Personal </p>
+							<h2> Fridge </h2>
+							<p class="tags"> Skills: Ruby on Rails, Javascript, Postgres </p>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<a href="#details" class="next-section">
+				<span class="icon-arrow-down"></span>
+				<span>More</span>
+			</a>
+		</div>
+
+		<div id="details" class="section">
+			<div class="inner-section">
+				<span class="inner-text"> Everything else. </span>
+				<ul class="icon-wrapper">
+					<a target="_blank" href="https://twitter.com/extremedavidh"> <li class="icon"> <span class="icon-twitter"></span> </li> </a>
+					<a target="_blank" href="https://github.com/dhahn"> <li class="icon"> <span class="icon-github"></span> </li> </a>
+					<a target="_blank" href="https://www.facebook.com/davidmhahn"> <li class="icon"> <span class="icon-facebook"></span> </li> </a>
+					<a target="_blank" href="https://www.linkedin.com/pub/david-hahn/78/438/448"> <li class="icon"> <span class="icon-linkedin2"></span> </li> </a>
+					<a target="_blank" href="http://www.pandora.com/profile/davidmichaelhahn"> <li class="icon"> <span class="icon-headphones"></span> </li> </a>
+					<a target="_blank" href="#still-to-come"> <li class="icon"> <span class="icon-pencil"></span> </li> </a>
+					<a target="_blank" href="mailto:davidmichaelhahn@gmail.com"> <li class="icon"> <span class="icon-mail"></span> </li> </a>
+					<a target="_blank" href="https://www.google.com/calendar/embed?src=david%4040digits.com&ctz=America/Chicago"> <li class="icon"> <span class="icon-calendar"></span> </li> </a>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
