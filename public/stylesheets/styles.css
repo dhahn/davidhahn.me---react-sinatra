@@ -13,69 +13,66 @@ body {
   height: 100vh;
   position: relative; }
 
-#splash-screen .inner-section {
-  height: 100vh;
-  text-align: center; }
 #splash-screen .inner-text {
-  display: inline-block;
+  position: absolute;
   font-size: 72px;
-  line-height: 100vh;
-  font-weight: 100; }
+  width: 7em;
+  top: 50%;
+  font-weight: 100;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
 #splash-screen .keyword {
-  display: inline-block;
   font-size: 72px;
-  line-height: 100vh;
   font-weight: 400; }
 
-#maker-of-things .inner-section {
-  height: 100vh;
-  width: 650px;
-  margin: auto; }
 #maker-of-things .inner-text {
-  display: block;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 6em;
   font-size: 72px;
-  line-height: 100vh;
-  font-weight: 100;
-  width: 440px;
-  float: left; }
+  font-weight: 100; }
 #maker-of-things .keyword {
-  display: block;
   font-size: 72px;
-  line-height: 100vh;
   font-weight: 400;
-  width: 100px;
-  float: left; }
+  width: 4.5em;
+  position: absolute;
+  left: 66%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); }
 
-#make-things-with .inner-section {
-  height: 100vh;
-  margin-left: 350px; }
 #make-things-with .inner-text {
-  display: block;
+  position: absolute;
+  left: 42%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 8em;
   font-size: 72px;
-  line-height: 100vh;
-  font-weight: 100;
-  width: 545px;
-  float: left; }
+  font-weight: 100; }
 #make-things-with .keyword {
-  display: block;
   font-size: 72px;
-  line-height: 100vh;
   font-weight: 400;
-  width: 450px;
-  float: left;
-  text-align: left; }
+  width: 6.5em;
+  position: absolute;
+  left: 76%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); }
 
-#things-made .inner-section {
-  height: 100vh;
-  text-align: center; }
 #things-made .inner-text {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 72px;
   font-weight: 100;
-  padding-top: 100px;
-  display: block; }
+  width: 13.2em; }
 #things-made .project-wrapper {
   width: 1120px;
-  margin: 50px auto;
+  position: absolute;
+  left: 50%;
+  top: 14em;
+  transform: translateX(-50%);
   clear: both; }
   #things-made .project-wrapper .projects {
     background-color: #ecf0f1;
@@ -108,53 +105,53 @@ body {
     #things-made .project-wrapper .projects:hover p, #things-made .project-wrapper .projects:hover h2 {
       color: #ffffff; }
   #things-made .project-wrapper #potato-ship {
-    background: url("/potato-ship.png");
+    background: url("/potato-ship.jpg");
     background-size: cover; }
   #things-made .project-wrapper #potato-ship:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/potato-ship.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/potato-ship.jpg");
     background-size: cover;
     -webkit-filter: grayscale(100%);
     filter: gray; }
   #things-made .project-wrapper #fridge {
-    background: url("/fridge-cover.png");
+    background: url("/fridge-cover.jpg");
     background-size: cover; }
   #things-made .project-wrapper #fridge:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/fridge-cover.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/fridge-cover.jpg");
     background-size: cover;
     -webkit-filter: grayscale(100%);
     filter: gray; }
   #things-made .project-wrapper #jurnl {
-    background: url("/jurnl-cover.png");
+    background: url("/jurnl-cover.jpg");
     background-size: cover; }
   #things-made .project-wrapper #jurnl:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/jurnl-cover.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/jurnl-cover.jpg");
     background-size: cover;
     -webkit-filter: grayscale(100%);
     filter: gray; }
   #things-made .project-wrapper #how-epic {
-    background: url("/how-epic.png");
+    background: url("/how-epic.jpg");
     background-size: cover; }
   #things-made .project-wrapper #how-epic:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/how-epic.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/how-epic.jpg");
     background-size: cover;
     -webkit-filter: grayscale(100%);
     filter: gray; }
 
-#details .inner-section {
-  height: 100vh;
-  text-align: center;
-  font-weight: 100;
-  font-size: 72px; }
 #details .inner-text {
   font-size: 72px;
   font-weight: 100;
-  padding-top: 100px;
-  display: block; }
+  position: absolute;
+  width: 6.6em;
+  left: 50%;
+  top: 1em;
+  transform: translateX(-50%); }
 #details .icon-wrapper {
-  margin: 80px auto;
-  margin-top: 20px;
+  position: absolute;
+  width: 7em;
+  left: 50%;
+  top: 12em;
+  transform: translateX(-50%);
   width: 540px;
-  display: block;
   clear: both; }
   #details .icon-wrapper .icon {
     list-style-type: none;
