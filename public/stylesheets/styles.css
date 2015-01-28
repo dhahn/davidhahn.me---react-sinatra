@@ -25,39 +25,39 @@ body {
   font-size: 72px;
   font-weight: 400; }
 
-#maker-of-things .inner-text {
-  position: absolute;
-  left: 40%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 6em;
-  font-size: 72px;
-  font-weight: 100; }
-#maker-of-things .keyword {
-  font-size: 72px;
-  font-weight: 400;
-  width: 4.5em;
-  position: absolute;
-  left: 66%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%); }
+#maker-of-things {
+  text-align: center; }
+  #maker-of-things span {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    text-align: left;
+    transform: translateY(-50%);
+    font-size: 72px; }
+  #maker-of-things .inner-text {
+    right: 45%;
+    font-weight: 100; }
+  #maker-of-things .keyword {
+    left: 56%;
+    font-weight: 400;
+    width: 4.5em; }
 
-#make-things-with .inner-text {
-  position: absolute;
-  left: 42%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 8em;
-  font-size: 72px;
-  font-weight: 100; }
-#make-things-with .keyword {
-  font-size: 72px;
-  font-weight: 400;
-  width: 6.5em;
-  position: absolute;
-  left: 76%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%); }
+#make-things-with {
+  text-align: center; }
+  #make-things-with span {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    text-align: left;
+    transform: translateY(-50%);
+    font-size: 72px; }
+  #make-things-with .inner-text {
+    right: 41%;
+    font-weight: 100; }
+  #make-things-with .keyword {
+    font-weight: 400;
+    width: 6.5em;
+    left: 60%; }
 
 #things-made .inner-text {
   position: absolute;
