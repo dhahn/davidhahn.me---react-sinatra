@@ -27,7 +27,7 @@ body {
 
 #maker-of-things {
   text-align: center; }
-  #maker-of-things span {
+  #maker-of-things .inner-text, #maker-of-things .keyword {
     position: absolute;
     display: inline-block;
     top: 50%;
@@ -44,7 +44,7 @@ body {
 
 #make-things-with {
   text-align: center; }
-  #make-things-with span {
+  #make-things-with .inner-text, #make-things-with .keyword {
     position: absolute;
     display: inline-block;
     top: 50%;
