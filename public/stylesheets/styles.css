@@ -1,3 +1,14 @@
+.profile-pic {
+  float: left;
+  width: 250px; }
+  @media screen and (max-width: 600px) {
+    .profile-pic {
+      width: 100px;
+      float: none; } }
+  @media screen and (min-width: 1200px) {
+    .profile-pic {
+      float: right; } }
+
 * {
   font-family: 'Lato', sans-serif;
   padding: 0;
@@ -7,71 +18,89 @@
   text-decoration: none; }
 
 body {
-  background: url("/tweed.png"); }
+  background: url("/tweed.png");
+  font-size: 4.5rem; }
 
 .section {
   height: 100vh;
   position: relative; }
 
 #splash-screen .inner-text {
+  text-align: center;
   position: absolute;
-  font-size: 72px;
-  width: 7em;
+  width: 31rem;
   top: 50%;
   font-weight: 100;
   left: 50%;
   transform: translateX(-50%) translateY(-50%); }
 #splash-screen .keyword {
-  font-size: 72px;
   font-weight: 400; }
+@media screen and (max-width: 600px) {
+  #splash-screen .inner-text {
+    font-size: 3rem;
+    width: 21rem; } }
 
 #maker-of-things {
-  text-align: center; }
+  text-align: center;
+  font-size: 4rem; }
   #maker-of-things .inner-text, #maker-of-things .keyword {
     position: absolute;
     display: inline-block;
     top: 50%;
     text-align: left;
-    transform: translateY(-50%);
-    font-size: 72px; }
+    transform: translateY(-50%); }
   #maker-of-things .inner-text {
     right: 45%;
     font-weight: 100; }
   #maker-of-things .keyword {
-    left: 56%;
+    left: 57%;
     font-weight: 400;
-    width: 4.5em; }
+    width: 4.5rem; }
+  @media screen and (max-width: 700px) {
+    #maker-of-things .inner-text, #maker-of-things .keyword {
+      font-size: 3rem; } }
+  @media screen and (max-width: 600px) {
+    #maker-of-things .inner-text, #maker-of-things .keyword {
+      font-size: 2rem; } }
 
 #make-things-with {
-  text-align: center; }
+  text-align: center;
+  font-size: 4rem; }
   #make-things-with .inner-text, #make-things-with .keyword {
     position: absolute;
     display: inline-block;
     top: 50%;
     text-align: left;
-    transform: translateY(-50%);
-    font-size: 72px; }
+    transform: translateY(-50%); }
   #make-things-with .inner-text {
     right: 41%;
     font-weight: 100; }
   #make-things-with .keyword {
     font-weight: 400;
-    width: 6.5em;
+    width: 23.5rem;
     left: 60%; }
+  @media screen and (max-width: 1024px) {
+    #make-things-with .inner-text, #make-things-with .keyword {
+      font-size: 3rem; } }
+  @media screen and (max-width: 700px) {
+    #make-things-with .inner-text, #make-things-with .keyword {
+      font-size: 2rem; } }
+  @media screen and (max-width: 600px) {
+    #make-things-with .inner-text, #make-things-with .keyword {
+      font-size: 1.5rem; } }
 
 #things-made .inner-text {
   position: absolute;
-  top: 1em;
+  top: 4rem;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 72px;
   font-weight: 100;
-  width: 13.2em; }
+  width: 60.1rem; }
 #things-made .project-wrapper {
   width: 1120px;
   position: absolute;
   left: 50%;
-  top: 14em;
+  top: 14rem;
   transform: translateX(-50%);
   clear: both; }
   #things-made .project-wrapper .projects {
@@ -95,7 +124,7 @@ body {
     #things-made .project-wrapper .projects h2 {
       font-family: "Droid Serif", serif;
       font-weight: 400;
-      line-height: 1em;
+      line-height: 1rem;
       text-align: left;
       font-size: 35px;
       margin-top: 10px; }
@@ -138,18 +167,17 @@ body {
     filter: gray; }
 
 #details .inner-text {
-  font-size: 72px;
   font-weight: 100;
   position: absolute;
-  width: 6.6em;
+  width: 30rem;
   left: 50%;
-  top: 1em;
+  top: 4rem;
   transform: translateX(-50%); }
 #details .icon-wrapper {
   position: absolute;
-  width: 7em;
+  width: 7rem;
   left: 50%;
-  top: 12em;
+  top: 12rem;
   transform: translateX(-50%);
   width: 540px;
   clear: both; }
