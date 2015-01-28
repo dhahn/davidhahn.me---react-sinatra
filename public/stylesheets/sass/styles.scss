@@ -32,27 +32,11 @@ body {
     font-weight: 400;
   }
 }
-// }
-
-//   span
-//     display: inline-block
-//     position: absolute
-//     &:nth-child(1)
-//       top: 50%
-//       right: 50%
-//       border: 1px solid blue
-//     &:nth-child(2)
-//       top: 50%
-//       left: 50%
-//       border: 1px solid red
-//       width: 10rem
-//       text-align: left
-
 
 #maker-of-things {
   text-align: center;
 
-  span {
+  .inner-text, .keyword {
     position: absolute;
     display: inline-block;
     top: 50%;
@@ -76,7 +60,7 @@ body {
 #make-things-with {
   text-align: center;
 
-  span {
+  .inner-text, .keyword {
     position: absolute;
     display: inline-block;
     top: 50%;
