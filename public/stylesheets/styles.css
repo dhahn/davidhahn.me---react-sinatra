@@ -1,3 +1,51 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("/fonts/icomoon.eot?-x6kzno");
+  src: url("/fonts/icomoon.eot?#iefix-x6kzno") format("embedded-opentype"), url("/fonts/icomoon.woff?-x6kzno") format("woff"), url("/fonts/icomoon.ttf?-x6kzno") format("truetype"), url("/fonts/icomoon.svg?-x6kzno#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-spotify:before {
+  content: "\e600"; }
+
+.icon-arrow-down:before {
+  content: "\e601"; }
+
+.icon-pencil:before {
+  content: "\e905"; }
+
+.icon-facebook:before {
+  content: "\ea8c"; }
+
+.icon-twitter:before {
+  content: "\ea91"; }
+
+.icon-github:before {
+  content: "\eab1"; }
+
+.icon-linkedin2:before {
+  content: "\eac9"; }
+
+.icon-mail:before {
+  content: "\e602"; }
+
+.icon-calendar:before {
+  content: "\e603"; }
+
+.icon-headphones:before {
+  content: "\e910"; }
+
 .profile-pic {
   float: left;
   width: 250px; }
@@ -56,7 +104,7 @@ body {
     left: 57%;
     font-weight: 400;
     width: 4.5rem; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1200px) {
     #maker-of-things .inner-text, #maker-of-things .keyword {
       font-size: 3rem; } }
   @media screen and (max-width: 600px) {
@@ -79,10 +127,10 @@ body {
     font-weight: 400;
     width: 23.5rem;
     left: 60%; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     #make-things-with .inner-text, #make-things-with .keyword {
       font-size: 3rem; } }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 900px) {
     #make-things-with .inner-text, #make-things-with .keyword {
       font-size: 2rem; } }
   @media screen and (max-width: 600px) {
@@ -96,75 +144,80 @@ body {
   transform: translateX(-50%);
   font-weight: 100;
   width: 60.1rem; }
-#things-made .project-wrapper {
-  width: 1120px;
-  position: absolute;
-  left: 50%;
-  top: 14rem;
-  transform: translateX(-50%);
-  clear: both; }
-  #things-made .project-wrapper .projects {
-    background-color: #ecf0f1;
-    width: 200px;
-    height: 250px;
-    margin: 30px;
-    float: left;
-    padding: 10px;
-    cursor: pointer;
-    -moz-transition: background 1s;
-    -webkit-transition: background 1s;
-    -o-transition: background 1s;
-    -ms-transition: background 1s;
-    transition: background 1s;
-    position: relative;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
-    #things-made .project-wrapper .projects p {
-      font-size: 10px;
-      text-align: left; }
-    #things-made .project-wrapper .projects h2 {
-      font-family: "Droid Serif", serif;
-      font-weight: 400;
-      line-height: 1rem;
-      text-align: left;
-      font-size: 35px;
-      margin-top: 10px; }
-    #things-made .project-wrapper .projects .tags {
-      position: absolute;
-      bottom: 10px; }
-    #things-made .project-wrapper .projects:hover p, #things-made .project-wrapper .projects:hover h2 {
-      color: #ffffff; }
-  #things-made .project-wrapper #potato-ship {
-    background: url("/potato-ship.jpg");
-    background-size: cover; }
-  #things-made .project-wrapper #potato-ship:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/potato-ship.jpg");
-    background-size: cover;
-    -webkit-filter: grayscale(100%);
-    filter: gray; }
-  #things-made .project-wrapper #fridge {
-    background: url("/fridge-cover.jpg");
-    background-size: cover; }
-  #things-made .project-wrapper #fridge:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/fridge-cover.jpg");
-    background-size: cover;
-    -webkit-filter: grayscale(100%);
-    filter: gray; }
-  #things-made .project-wrapper #jurnl {
-    background: url("/jurnl-cover.jpg");
-    background-size: cover; }
-  #things-made .project-wrapper #jurnl:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/jurnl-cover.jpg");
-    background-size: cover;
-    -webkit-filter: grayscale(100%);
-    filter: gray; }
-  #things-made .project-wrapper #how-epic {
-    background: url("/how-epic.jpg");
-    background-size: cover; }
-  #things-made .project-wrapper #how-epic:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/how-epic.jpg");
-    background-size: cover;
-    -webkit-filter: grayscale(100%);
-    filter: gray; }
+#things-made #project-wrapper .projects {
+  background-color: #ecf0f1;
+  width: 200px;
+  height: 250px;
+  margin: 30px;
+  float: left;
+  padding: 10px;
+  cursor: pointer;
+  -moz-transition: background 1s;
+  -webkit-transition: background 1s;
+  -o-transition: background 1s;
+  -ms-transition: background 1s;
+  transition: background 1s;
+  position: relative;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+  #things-made #project-wrapper .projects p {
+    font-size: 10px;
+    text-align: left; }
+  #things-made #project-wrapper .projects h2 {
+    font-family: "Droid Serif", serif;
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: left;
+    font-size: 35px;
+    margin-top: 10px; }
+  #things-made #project-wrapper .projects .tags {
+    position: absolute;
+    bottom: 10px; }
+  #things-made #project-wrapper .projects:hover p, #things-made #project-wrapper .projects:hover h2 {
+    color: #ffffff; }
+#things-made #project-wrapper #potato-ship {
+  background: url("/potato-ship.jpg");
+  background-size: cover; }
+#things-made #project-wrapper #potato-ship:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/potato-ship.jpg");
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: gray; }
+#things-made #project-wrapper #fridge {
+  background: url("/fridge-cover.jpg");
+  background-size: cover; }
+#things-made #project-wrapper #fridge:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/fridge-cover.jpg");
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: gray; }
+#things-made #project-wrapper #jurnl {
+  background: url("/jurnl-cover.jpg");
+  background-size: cover; }
+#things-made #project-wrapper #jurnl:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/jurnl-cover.jpg");
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: gray; }
+#things-made #project-wrapper #how-epic {
+  background: url("/how-epic.jpg");
+  background-size: cover; }
+#things-made #project-wrapper #how-epic:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/how-epic.jpg");
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: gray; }
+@media screen and (max-width: 1200px) {
+  #things-made .inner-text {
+    font-size: 3rem;
+    width: 39.6rem; } }
+@media screen and (max-width: 900px) {
+  #things-made .inner-text, #things-made .keyword {
+    font-size: 2.5rem;
+    width: 33rem; } }
+@media screen and (max-width: 600px) {
+  #things-made .inner-text, #things-made .keyword {
+    font-size: 1.5rem;
+    width: 19.8rem; } }
 
 #details .inner-text {
   font-weight: 100;
@@ -175,11 +228,10 @@ body {
   transform: translateX(-50%); }
 #details .icon-wrapper {
   position: absolute;
-  width: 7rem;
+  width: 34rem;
   left: 50%;
   top: 12rem;
   transform: translateX(-50%);
-  width: 540px;
   clear: both; }
   #details .icon-wrapper .icon {
     list-style-type: none;
@@ -194,6 +246,16 @@ body {
       cursor: pointer; }
   #details .icon-wrapper .icon span:hover {
     color: #3498db; }
+@media screen and (max-width: 600px) {
+  #details .inner-text {
+    font-size: 3rem;
+    width: 20rem; }
+  #details .icon-wrapper {
+    width: 22.5rem; }
+    #details .icon-wrapper .icon {
+      margin: 35px; }
+      #details .icon-wrapper .icon span {
+        font-size: 50px; } }
 
 .next-section {
   display: block;
@@ -223,53 +285,5 @@ body {
     display: block;
     font-size: 30px;
     padding: 10px 0 3px 0; }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("/fonts/icomoon.eot?-x6kzno");
-  src: url("/fonts/icomoon.eot?#iefix-x6kzno") format("embedded-opentype"), url("/fonts/icomoon.woff?-x6kzno") format("woff"), url("/fonts/icomoon.ttf?-x6kzno") format("truetype"), url("/fonts/icomoon.svg?-x6kzno#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-spotify:before {
-  content: "\e600"; }
-
-.icon-arrow-down:before {
-  content: "\e601"; }
-
-.icon-pencil:before {
-  content: "\e905"; }
-
-.icon-facebook:before {
-  content: "\ea8c"; }
-
-.icon-twitter:before {
-  content: "\ea91"; }
-
-.icon-github:before {
-  content: "\eab1"; }
-
-.icon-linkedin2:before {
-  content: "\eac9"; }
-
-.icon-mail:before {
-  content: "\e602"; }
-
-.icon-calendar:before {
-  content: "\e603"; }
-
-.icon-headphones:before {
-  content: "\e910"; }
 
 /*# sourceMappingURL=styles.css.map */

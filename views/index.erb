@@ -4,6 +4,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,400,900' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/jquery.bxslider.min.js"></script>
+	<link href="/jquery.bxslider.css" rel="stylesheet" />
+
 	<script> 
 		window.config = window.config || {};
 		window.config.maker_words = '<%= %w( systems programs software websites things ).to_json %>';
@@ -46,39 +49,39 @@
 		<div id="things-made" class="section">
 			<span class="inner-text"> Here are some things I've made.</span>
 
-			<div class="project-wrapper">
+			<ul id="project-wrapper">
 				<a target="_blank" href="https://github.com/collettiquette/potato_ship">
-					<div id="potato-ship" class="projects"> 
+					<li id="potato-ship" class="projects"> 
 						<p> October 2014, Personal </p>
 						<h2> Potato Ship </h2>
 						<p class="tags"> Skills: Ruby on Rails, Javascript, Websockets </p>
-					</div>
+					</li>
 				</a>
 
 				<a target="_blank" href="http://www.howepic.net">
-					<div id="how-epic" class="projects"> 
+					<li id="how-epic" class="projects"> 
 						<p> August 2014, Personal </p>
 						<h2> How Epic </h2>
 						<p class="tags"> Skills: Ruby on Rails, Javascript, API </p>
-					</div>
+					</li>
 				</a>
 
 				<a target="_blank" href="https://github.com/dhahn/Jurnl">
-					<div id="jurnl" class="projects"> 
+					<li id="jurnl" class="projects"> 
 						<p> December 2013, Personal </p>
 						<h2> Jurnl </h2>
 						<p class="tags"> Skills: Ruby on Rails, Javascript, Postgres </p>
-					</div>
+					</li>
 				</a>
 
 				<a target="_blank" href="https://github.com/dhahn/r13-team-45">
-					<div id="fridge" class="projects"> 
+					<li id="fridge" class="projects"> 
 						<p> October 2013, Personal </p>
 						<h2> Fridge </h2>
 						<p class="tags"> Skills: Ruby on Rails, Javascript, Postgres </p>
-					</div>
+					</li>
 				</a>
-			</div>
+			</ul>
 			
 			<a href="#details" class="next-section">
 				<span class="icon-arrow-down"></span>
