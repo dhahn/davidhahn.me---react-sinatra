@@ -32,6 +32,7 @@ body {
 
 .section {
   height: 100vh;
+  width: 100vw;
   position: relative;
 }
 
@@ -44,6 +45,7 @@ body {
     font-weight: 100;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
   }
 
   .keyword {
@@ -68,6 +70,7 @@ body {
     top: 50%;
     text-align: left;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
   }
 
   .inner-text {
@@ -104,6 +107,7 @@ body {
     top: 50%;
     text-align: left;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
   } 
 
   .inner-text {
@@ -141,7 +145,7 @@ body {
     position: absolute;
     top: 4rem;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     font-weight: 100;
     width: 60.1rem;
   } 
@@ -286,6 +290,7 @@ body {
     left: 50%;
     top: 4rem;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
   } 
 
   .icon-wrapper {
@@ -294,6 +299,7 @@ body {
     left: 50%;
     top: 12rem;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     clear: both;
 
     .icon  {

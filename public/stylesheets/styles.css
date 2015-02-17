@@ -71,6 +71,7 @@ body {
 
 .section {
   height: 100vh;
+  width: 100vw;
   position: relative; }
 
 #splash-screen .inner-text {
@@ -80,7 +81,8 @@ body {
   top: 50%;
   font-weight: 100;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%); }
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%); }
 #splash-screen .keyword {
   font-weight: 400; }
 @media screen and (max-width: 600px) {
@@ -96,7 +98,8 @@ body {
     display: inline-block;
     top: 50%;
     text-align: left;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); }
   #maker-of-things .inner-text {
     right: 45%;
     font-weight: 100; }
@@ -119,7 +122,8 @@ body {
     display: inline-block;
     top: 50%;
     text-align: left;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); }
   #make-things-with .inner-text {
     right: 41%;
     font-weight: 100; }
@@ -141,7 +145,7 @@ body {
   position: absolute;
   top: 4rem;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   font-weight: 100;
   width: 60.1rem; }
 #things-made #project-wrapper .projects {
@@ -225,13 +229,15 @@ body {
   width: 30rem;
   left: 50%;
   top: 4rem;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); }
 #details .icon-wrapper {
   position: absolute;
   width: 34rem;
   left: 50%;
   top: 12rem;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   clear: both; }
   #details .icon-wrapper .icon {
     list-style-type: none;
