@@ -1,21 +1,23 @@
 <html>
-	<title>Hello, I'm David.</title>
-	<link href="/stylesheets/styles.css" rel="stylesheet" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Lato:100,400,900' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="/jquery.bxslider.min.js"></script>
-	<script src="http://fb.me/react-0.12.2.js"></script>
-  <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
-	<link href="/jquery.bxslider.css" rel="stylesheet" />
-
-	<script> 
-		window.config = window.config || {};
-		window.config.maker_words = '<%= %w( systems programs software websites things ).to_json %>';
-		window.config.tools_words = '<%= ["Ruby", "Ruby on Rails", "Sinatra", "RSpec", "HTML", "CSS", "SASS", "SCSS", "JavaScript", "AJAX", "jQuery", "JRuby", "CoffeScript", "Bootstrap", "C++", "Java", "Python", "Lua", "Bash", "Pygameo", "PHP", "JSON", "XML", "Redis", "PostgreSQL", "SQLite", "Vim", "Git", "Nginx", "LDAP", "TDD", "Laravel", "Wordpress"].to_json %> '
-	</script>
-	<script type="text/jsx" src="/scripts.js"></script>
+	<head>
+		<title>Hello, I'm David.</title>
+		<link href="/stylesheets/styles.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:100,400,900' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/jquery.bxslider.min.js"></script>
+		<script src="http://fb.me/react-0.12.2.js"></script>
+	  <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+		<link href="/jquery.bxslider.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="<%= request.base_url %>/favicon.ico">
+		<script>
+			window.config = window.config || {};
+			window.config.maker_words = '<%= %w( systems programs software websites things ).to_json %>';
+			window.config.tools_words = '<%= ["Ruby", "Ruby on Rails", "Sinatra", "RSpec", "HTML", "CSS", "SASS", "SCSS", "JavaScript", "AJAX", "jQuery", "JRuby", "CoffeScript", "Bootstrap", "C++", "Java", "Python", "Lua", "Bash", "Pygameo", "PHP", "JSON", "XML", "Redis", "PostgreSQL", "SQLite", "Vim", "Git", "Nginx", "LDAP", "TDD", "Laravel", "Wordpress"].to_json %> '
+		</script>
+		<script type="text/jsx" src="/scripts.js"></script>
+	</head>
 
 	<body>
     <div id="content"></div>
