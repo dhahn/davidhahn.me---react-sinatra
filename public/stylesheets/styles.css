@@ -178,35 +178,9 @@ body {
     bottom: 10px; }
   #things-made #project-wrapper .projects:hover p, #things-made #project-wrapper .projects:hover h2 {
     color: #ffffff; }
-#things-made #project-wrapper #potato-ship {
-  background: url("/potato-ship.jpg");
+#things-made #project-wrapper .projects {
   background-size: cover; }
-#things-made #project-wrapper #potato-ship:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/potato-ship.jpg");
-  background-size: cover;
-  -webkit-filter: grayscale(100%);
-  filter: gray; }
-#things-made #project-wrapper #fridge {
-  background: url("/fridge-cover.jpg");
-  background-size: cover; }
-#things-made #project-wrapper #fridge:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/fridge-cover.jpg");
-  background-size: cover;
-  -webkit-filter: grayscale(100%);
-  filter: gray; }
-#things-made #project-wrapper #jurnl {
-  background: url("/jurnl-cover.jpg");
-  background-size: cover; }
-#things-made #project-wrapper #jurnl:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/jurnl-cover.jpg");
-  background-size: cover;
-  -webkit-filter: grayscale(100%);
-  filter: gray; }
-#things-made #project-wrapper #how-epic {
-  background: url("/how-epic.jpg");
-  background-size: cover; }
-#things-made #project-wrapper #how-epic:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/how-epic.jpg");
+#things-made #project-wrapper .projects:hover {
   background-size: cover;
   -webkit-filter: grayscale(100%);
   filter: gray; }
