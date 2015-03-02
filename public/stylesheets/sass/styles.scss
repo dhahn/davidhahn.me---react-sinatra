@@ -333,4 +333,15 @@ body {
     font-size: 30px;
     padding: 10px 0 3px 0;
   }
+
+  @media screen and (max-width: $break-small) {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    bottom: 20px;
+
+    .icon-arrow-down {
+      padding: 5px 0 3px 0;
+    }
+  }
 }

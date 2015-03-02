@@ -272,5 +272,13 @@ body {
     display: block;
     font-size: 30px;
     padding: 10px 0 3px 0; }
+  @media screen and (max-width: 600px) {
+    .next-section {
+      width: 40px;
+      height: 40px;
+      margin-left: -20px;
+      bottom: 20px; }
+      .next-section .icon-arrow-down {
+        padding: 5px 0 3px 0; } }
 
 /*# sourceMappingURL=styles.css.map */
