@@ -54,8 +54,8 @@ body {
 
   @media screen and (max-width: $break-small) {
     .inner-text {
-      font-size: 3rem;
-      width: 21rem;
+      font-size: 2.7rem;
+      width: 18.5rem;
     }
   }
 }
@@ -92,7 +92,11 @@ body {
 
   @media screen and (max-width: $break-small) {
     .inner-text, .keyword {
-      font-size: 2rem;
+      font-size: 1.7rem;
+    }
+
+    .inner-text {
+      right: 45%;
     }
   }
 }
@@ -136,6 +140,10 @@ body {
   @media screen and (max-width: $break-small) {
     .inner-text, .keyword {
       font-size: 1.5rem;
+    }
+
+    .inner-text {
+      right: 42%;
     }
   }
 }
@@ -222,8 +230,12 @@ body {
 
   @media screen and (max-width: $break-small) {
     .inner-text, .keyword {
-      font-size: 1.5rem;
-      width: 19.8rem;
+      font-size: 1.3rem;
+      width: 17.2rem;
+    }
+
+    .bx-wrapper {
+      top: 6rem;
     }
   }
 }
@@ -270,15 +282,16 @@ body {
 
   @media screen and (max-width: $break-small) {
     .inner-text {
-      font-size: 3rem;
-      width: 20rem;
+      font-size: 2.7rem;
+      width: 17.8rem;
     }
 
     .icon-wrapper {
-      width: 22.5rem;
+      width: 21.5rem;
+      top:  7.5rem;
 
       .icon {
-        margin: 35px;
+        margin: 32px;
 
         span {
           font-size: 50px;

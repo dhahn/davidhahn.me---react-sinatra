@@ -223,8 +223,8 @@ var HomePage = React.createClass({
     return (
       <div>
         <SplashScreen />
-        <KeywordSection wrapperID="maker-of-things" nextSection="#make-things-with" innerText="I'm a maker of" words={ JSON.parse(window.config.maker_words) }/> 
-        <KeywordSection wrapperID="make-things-with" nextSection="#things-made" innerText="I make things with" words={ JSON.parse(window.config.tools_words) }/> 
+        <KeywordSection wrapperID="maker-of-things" nextSection="#make-things-with" innerText="I'm a maker of" words={ JSON.parse(window.config.maker_words) }/>
+        <KeywordSection wrapperID="make-things-with" nextSection="#things-made" innerText="I make things with" words={ JSON.parse(window.config.tools_words) }/>
         <ProjectsMade />
         <DetailSection />
       </div>

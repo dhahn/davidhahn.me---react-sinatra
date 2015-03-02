@@ -87,8 +87,8 @@ body {
   font-weight: 400; }
 @media screen and (max-width: 600px) {
   #splash-screen .inner-text {
-    font-size: 3rem;
-    width: 21rem; } }
+    font-size: 2.7rem;
+    width: 18.5rem; } }
 
 #maker-of-things {
   text-align: center;
@@ -101,7 +101,7 @@ body {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%); }
   #maker-of-things .inner-text {
-    right: 45%;
+    right: 44%;
     font-weight: 100; }
   #maker-of-things .keyword {
     left: 57%;
@@ -112,7 +112,9 @@ body {
       font-size: 3rem; } }
   @media screen and (max-width: 600px) {
     #maker-of-things .inner-text, #maker-of-things .keyword {
-      font-size: 2rem; } }
+      font-size: 1.7rem; }
+    #maker-of-things .inner-text {
+      right: 45%; } }
 
 #make-things-with {
   text-align: center;
@@ -139,7 +141,9 @@ body {
       font-size: 2rem; } }
   @media screen and (max-width: 600px) {
     #make-things-with .inner-text, #make-things-with .keyword {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+    #make-things-with .inner-text {
+      right: 42%; } }
 
 #things-made .inner-text {
   position: absolute;
@@ -194,8 +198,10 @@ body {
     width: 33rem; } }
 @media screen and (max-width: 600px) {
   #things-made .inner-text, #things-made .keyword {
-    font-size: 1.5rem;
-    width: 19.8rem; } }
+    font-size: 1.3rem;
+    width: 17.2rem; }
+  #things-made .bx-wrapper {
+    top: 6rem; } }
 
 #details .inner-text {
   font-weight: 100;
@@ -228,12 +234,13 @@ body {
     color: #3498db; }
 @media screen and (max-width: 600px) {
   #details .inner-text {
-    font-size: 3rem;
-    width: 20rem; }
+    font-size: 2.7rem;
+    width: 17.8rem; }
   #details .icon-wrapper {
-    width: 22.5rem; }
+    width: 21.5rem;
+    top: 7.5rem; }
     #details .icon-wrapper .icon {
-      margin: 35px; }
+      margin: 32px; }
       #details .icon-wrapper .icon span {
         font-size: 50px; } }
 
