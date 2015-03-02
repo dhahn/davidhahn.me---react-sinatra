@@ -198,8 +198,8 @@ body {
     width: 33rem; } }
 @media screen and (max-width: 600px) {
   #things-made .inner-text, #things-made .keyword {
-    font-size: 1.3rem;
-    width: 17.2rem; }
+    font-size: 1.2rem;
+    width: 15.9rem; }
   #things-made .bx-wrapper {
     top: 6rem; } }
 
