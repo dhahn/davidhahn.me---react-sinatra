@@ -3,7 +3,8 @@ var SplashScreen = React.createClass({
     return (
       <div id="splash-screen" className="section">
         <span className="inner-text">
-          <span className="keyword">Hello</span>, I&#39;m David.
+          <span className="keyword"></span>
+          <span className="other-words"></span>
         </span>
 
         <a href="#maker-of-things" className="next-section">
@@ -12,6 +13,14 @@ var SplashScreen = React.createClass({
         </a>
       </div>
     );
+  },
+
+  componentDidMount: function() {
+    theater
+      .describe("Keyword", { speed: .8, accuracy: .6, invincibility: 4 }, "#splash-screen .keyword")
+      .describe("OtherWords", { speed: .6, accuracy: .6, invincibility: 4 }, "#splash-screen .other-words");
+
+    theater.write("Keyword:Hello", 500, "OtherWords:, I'm David.");
   }
 });
 
@@ -19,8 +28,8 @@ var KeywordSection = React.createClass({
   render: function() {
     return (
       <div id={ this.props.wrapperID } className="section">
-        <span className="inner-text"> { this.props.innerText } </span>
-        <span className="keyword"> { this.state.keyword } </span>
+        <span className="inner-text"></span>
+        <span className="keyword"></span>
 
         <a href={ this.props.nextSection } className="next-section">
           <span className="icon-arrow-down"></span>
@@ -39,12 +48,18 @@ var KeywordSection = React.createClass({
     var next_index = this.state.index + 1
     var new_word = this.state.words[next_index % this.state.words.length];
 
+    theater.write(this.props.wrapperID + "Keyword:" + new_word);
     this.setState({index: next_index, keyword: new_word });
   },
 
   componentDidMount: function() {
+    theater
+     .describe(this.props.wrapperID + "InnerText", { speed: .8, accuracy: .6, invincibility: 4 },"#" + this.props.wrapperID + " .inner-text")
+     .describe(this.props.wrapperID + "Keyword", { speed: .6, accuracy: .6, invincibility: 4 }, "#" + this.props.wrapperID + " .keyword");
+
+    theater.write(this.props.wrapperID + "InnerText:" + this.props.innerText);
     this.updateKeyword();
-    setInterval(this.updateKeyword, 1000);
+    setInterval(this.updateKeyword, 100);
   },
 });
 
@@ -230,7 +245,6 @@ var HomePage = React.createClass({
       </div>
     );
   },
-
   componentDidMount: function() {
     $(document).on('click', 'a[href^="#"]', function (e) {
       e.preventDefault();
@@ -244,6 +258,22 @@ var HomePage = React.createClass({
     });
   }
 });
+
+var theater = new TheaterJS();
+theater
+  .on("say:start, erase:start", function (eventName) {
+    var self    = this,
+        current = self.current.voice;
+
+    self.utils.addClass(current, "saying");
+  })
+  .on("say:end, erase:end", function (eventName) {
+    var self    = this,
+        current = self.current.voice;
+
+    self.utils.removeClass(current, "saying");
+  });
+
 
 React.render(
   <HomePage />,
