@@ -59,7 +59,7 @@ var KeywordSection = React.createClass({
 
     theater.write(this.props.wrapperID + "InnerText:" + this.props.innerText);
     this.updateKeyword();
-    setInterval(this.updateKeyword, 100);
+    setInterval(this.updateKeyword, 3000);
   },
 });
 
