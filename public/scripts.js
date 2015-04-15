@@ -17,7 +17,7 @@ var SplashScreen = React.createClass({
 
   componentDidMount: function() {
     theater
-      .describe("Keyword", { speed: .8, accuracy: .6, invincibility: 4 }, "#splash-screen .keyword")
+      .describe("Keyword", { speed: .6, accuracy: .6, invincibility: 4 }, "#splash-screen .keyword")
       .describe("OtherWords", { speed: .6, accuracy: .6, invincibility: 4 }, "#splash-screen .other-words");
 
     theater.write("Keyword:Hello", 500, "OtherWords:, I'm David.");
